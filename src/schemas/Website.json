@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://letsflash.co/#website",
+  "url": "https://letsflash.co/",
+  "name": "LetsFlash - Virtual Study Assistant",
+  "inLanguage": "en-us",
+  "description": "Virtual Study Assistant for any Occasion."
+}

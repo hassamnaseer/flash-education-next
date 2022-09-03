@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://letsflash.co/",
+      "name": "LetsFlash",
+      "url": "https://letsflash.co/",
+      "sameAs": [
+        "https://www.facebook.com/letsflasheducation/",
+        "https://twitter.com/letsflash",
+        "https://www.instagram.com/_letsflash_/",
+        "https://www.tiktok.com/@letsflash_/"
+      ],
+      "Logo": {
+        "@type": "ImageObject",
+        "Url": "https://letsflash.co/images/logo.png",
+        "caption": "LetsFlash",
+        "Width": 170,
+        "Height": 110
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://letsflash.co/#website",
+      "url": "https://letsflash.co/",
+      "name": "LetsFlash - Virtual Study Assistant",
+      "inLanguage": "en-us",
+      "description": "Virtual Study Assistant for any Occasion."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://letsflash.co/#webpage",
+      "url": "https://letsflash.co/",
+      "inLanguage": "en-US",
+      "name": "LetsFlash - Virtual Study Assistant",
+      "description": "Virtual Study Assistant for any Occasion.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+        "caption": ""
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://letsflash.co/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "WebPage",
+            "@id": "https://letsflash.co/#breadcrumbpage",
+            "url": "https://letsflash.co",
+            "name": "Home"
+          }
+        }
+      ]
+    }
+  ]
+}

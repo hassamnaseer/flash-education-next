@@ -1,0 +1,258 @@
+{
+  "home": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co",
+          "name": "Home"
+        }
+      }
+    ]
+  },
+  "login": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/login/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/login/#breadcrumbpage",
+          "url": "https://letsflash.co/login",
+          "name": "Login"
+        }
+      }
+    ]
+  },
+  "register": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/register/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/register/#breadcrumbpage",
+          "url": "https://letsflash.co/register",
+          "name": "Register"
+        }
+      }
+    ]
+  },
+  "app": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/home/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co/",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/login/#breadcrumbpage",
+          "url": "https://letsflash.co/login",
+          "name": "Login"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/home/#breadcrumbpage",
+          "url": "https://letsflash.co/home",
+          "name": "App Home"
+        }
+      }
+    ]
+  },
+  "folders": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/folder/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co/",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/login/#breadcrumbpage",
+          "url": "https://letsflash.co/login",
+          "name": "Login"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/folder/#breadcrumbpage",
+          "url": "https://letsflash.co/folder",
+          "name": "Folders"
+        }
+      }
+    ]
+  },
+  "sets": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/sets/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co/",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/login/#breadcrumbpage",
+          "url": "https://letsflash.co/login",
+          "name": "Login"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/sets/#breadcrumbpage",
+          "url": "https://letsflash.co/sets",
+          "name": "Sets"
+        }
+      }
+    ]
+  },
+  "category": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/category/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co/",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/login/#breadcrumbpage",
+          "url": "https://letsflash.co/login",
+          "name": "Login"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/category/#breadcrumbpage",
+          "url": "https://letsflash.co/category",
+          "name": "Category"
+        }
+      }
+    ]
+  },
+  "blog": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://letsflash.co/blog/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/#breadcrumbpage",
+          "url": "https://letsflash.co/",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/login/#breadcrumbpage",
+          "url": "https://letsflash.co/login",
+          "name": "Login"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://letsflash.co/blog/#breadcrumbpage",
+          "url": "https://letsflash.co/blog",
+          "name": "Blog"
+        }
+      }
+    ]
+  }
+}

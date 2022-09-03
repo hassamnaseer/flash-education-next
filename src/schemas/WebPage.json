@@ -1,0 +1,114 @@
+{
+  "home": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/#webpage",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/",
+    "inLanguage": "en-US",
+    "name": "LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  },
+  "login": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/login",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/login",
+    "inLanguage": "en-US",
+    "name": "Login - LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  },
+  "register": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/register",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/register",
+    "inLanguage": "en-US",
+    "name": "Register - LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  },
+  "app": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/home",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/home",
+    "inLanguage": "en-US",
+    "name": "Home - LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  },
+  "folders": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/folder",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/folder",
+    "inLanguage": "en-US",
+    "name": "Folders - LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  },
+  "sets": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/sets",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/sets",
+    "inLanguage": "en-US",
+    "name": "Sets - LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  },
+  "category": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/category",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/category",
+    "inLanguage": "en-US",
+    "name": "Category - LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  },
+  "blog": {
+    "@context": "https://schema.org",
+    "@id": "https://letsflash.co/blog",
+    "@type": "WebPage",
+    "url": "https://letsflash.co/blog",
+    "inLanguage": "en-US",
+    "name": "Blog - LetsFlash - Virtual Study Assistant",
+    "description": "Virtual Study Assistant for any Occasion.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/bampow/image/upload/v1631815649/Lightbulb_1.jpg",
+      "caption": ""
+    }
+  }
+}
