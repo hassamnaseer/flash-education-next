@@ -46,7 +46,11 @@ const Sets = withRouter(class extends Component {
 
   UNSAFE_componentWillMount() {
     window.scrollTo(0, 0)
+    console.log("🚀 ~ file: index.js ~ line 50 ~ extends ~ UNSAFE_componentWillMount ~ this.state.user_id", this.state.user_id)
     this.props.getFolder(this.state.user_id)
+    console.log(this.state.applied_folder_data);
+    console.log(this.state.applied_folder_data === undefined);
+    console.log(Object.keys(this.state.applied_folder_data).length);
     if (this.state.applied_folder_data === undefined || Object.keys(this.state.applied_folder_data).length === 0) {
       this.props.getSetsByUserId(this.state.user_id)
     } else {
@@ -56,6 +60,7 @@ const Sets = withRouter(class extends Component {
 
   UNSAFE_componentWillReceiveProps(newProps) {
     const { sets_list, add_response, edit_response, delete_response, folder_list } = newProps
+    console.log("🚀 ~ file: index.js ~ line 59 ~ extends ~ UNSAFE_componentWillReceiveProps ~ sets_list", sets_list.data)
 
     if (folder_list && folder_list.code === 200) {
       let folders = []
@@ -92,7 +97,7 @@ const Sets = withRouter(class extends Component {
       addFlag = false
       this.setState({ addEditFunc: '' })
       console.log('DATA: ', this.state.applied_folder_data)
-      if (this.state.applied_folder_data === undefined) {
+      if (!this.state.applied_folder_data || Object.keys(this.state.applied_folder_data).length === 0) {
         this.props.getSetsByUserId(this.state.user_id)
       } else {
         this.props.getSets(this.state.applied_folder_data.folder_id)
@@ -104,7 +109,11 @@ const Sets = withRouter(class extends Component {
 
     if (edit_response && edit_response.code === 200 && editFlag) {
       toaster('success', edit_response.message)
-      this.props.getSetsByUserId(this.state.user_id)
+      if (!this.state.applied_folder_data || Object.keys(this.state.applied_folder_data).length === 0) {
+        this.props.getSetsByUserId(this.state.user_id)
+      } else {
+        this.props.getSets(this.state.applied_folder_data.folder_id)
+      }
       editFlag = false
       this.setState({ addEditFunc: '' })
     } else if (edit_response && edit_response.code === 400 && editFlag) {
@@ -114,7 +123,11 @@ const Sets = withRouter(class extends Component {
 
     if (delete_response && delete_response.code === 200 && deleteFlag) {
       toaster('success', delete_response.message)
-      this.props.getSetsByUserId(this.state.user_id)
+      if (!this.state.applied_folder_data || Object.keys(this.state.applied_folder_data).length === 0) {
+        this.props.getSetsByUserId(this.state.user_id)
+      } else {
+        this.props.getSets(this.state.applied_folder_data.folder_id)
+      }
       deleteFlag = false
       this.setState({ deletFunc: false })
     } else if (delete_response && delete_response.code === 400 && deleteFlag) {
@@ -416,7 +429,7 @@ const Sets = withRouter(class extends Component {
                             onChange={e => this.handleSelect(e, 'select_folder')}
                           >
                             <option value="">Choose Folder</option>
-                            {add_folder.map(data => {
+                            {folders.map(data => {
                               return <option value={data.folder_id}>{data.name}</option>
                             })}
                           </select>

@@ -129,7 +129,7 @@ const Category = withRouter(class extends Component {
       addFlag = false
       this.setState({ addEditFunc: '' })
 
-      if (this.state.applied_set_data === undefined) {
+      if (!this.state.applied_set_data|| Object.keys(this.state.applied_set_data).length === 0) {
         this.props.getCategoryByUserId(this.state.user_id)
       } else {
         this.props.getCategory(this.state.applied_set_data.set_id)
@@ -142,7 +142,11 @@ const Category = withRouter(class extends Component {
 
     if (edit_response && edit_response.code === 200 && editFlag) {
       toaster('success', edit_response.message)
-      this.props.getCategory(this.state.applied_set_data.set_id)
+      if (!this.state.applied_set_data|| Object.keys(this.state.applied_set_data).length === 0) {
+        this.props.getCategoryByUserId(this.state.user_id)
+      } else {
+        this.props.getCategory(this.state.applied_set_data.set_id)
+      }
       getFlag = true
       editFlag = false
       this.setState({ addEditFunc: '' })
@@ -153,7 +157,11 @@ const Category = withRouter(class extends Component {
 
     if (delete_response && delete_response.code === 200 && deleteFlag) {
       toaster('success', delete_response.message)
-      this.props.getCategory(this.state.applied_set_data.set_id)
+      if (!this.state.applied_set_data|| Object.keys(this.state.applied_set_data).length === 0) {
+        this.props.getCategoryByUserId(this.state.user_id)
+      } else {
+        this.props.getCategory(this.state.applied_set_data.set_id)
+      }
       getFlag = true
       deleteFlag = false
       this.setState({ deletFunc: false })
@@ -165,6 +173,7 @@ const Category = withRouter(class extends Component {
 
   handleActions = (e, flag, data) => {
     const { applied_set_data, user_id, role } = this.state
+    console.log("🚀 ~ file: index.js ~ line 168 ~ extends ~ applied_set_data", applied_set_data)
     console.log('data', data)
     if (flag === 'view') {
       const name = this.camalize(data.name)
@@ -178,7 +187,7 @@ const Category = withRouter(class extends Component {
     } else if (flag === 'viewBack') {
       this.setState({ toggleFlag: true, category_id: '', category_name: '', user_id: data })
     } else if (flag === 'add') {
-      if (applied_set_data !== undefined && applied_set_data.user_id !== user_id && role !== 'admin') {
+      if (false &&  applied_set_data !== undefined && applied_set_data.user_id !== user_id && role !== 'admin') {
         this.setState({ alertFunc: true })
       } else {
         this.setState({
@@ -514,8 +523,8 @@ const Category = withRouter(class extends Component {
                           onChange={e => this.handleSelect(e, 'select_folder')}
                         >
                           <option value="">Choose Folder</option>
-                          {add_folder &&
-                            add_folder.map(data => {
+                          {folders &&
+                            folders.map(data => {
                               return <option value={data.folder_id}>{data.name}</option>
                             })}
                         </select>
@@ -530,8 +539,8 @@ const Category = withRouter(class extends Component {
                           onChange={e => this.handleSelect(e, 'select_set')}
                         >
                           <option value="">Choose Set</option>
-                          {add_set &&
-                            add_set.map(data => {
+                          {sets &&
+                            sets.map(data => {
                               return <option value={data.set_id}>{data.name}</option>
                             })}
                         </select>
